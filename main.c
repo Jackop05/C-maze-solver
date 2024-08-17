@@ -3,7 +3,6 @@
 #include <stdint.h>
 #include <string.h>
 
-#include "bintotxt.h"
 #include "mazeSolver.h"
 #include "printMovesToConsole.h"
 
@@ -25,15 +24,19 @@ int main(int argc, char *argv[]) {
     
     // Sprawdzamy czy zosala podana odpowiednią ilość argumentów
     if (argc != 2) {
-        fprintf(stderr, "Zle parametry wejsciowe. Poprawne uzycie: <maze_file>\n");
+        fprintf(stderr, "Złe parametry wejściowe. Poprawne użycie: <maze_file>\n");
         exit(106);
     }
+
 
 
     // Otwieramy plik do odczytu i zapisu
     FILE *maze;
     maze = fopen(argv[1], "r+");
-    
+    if(maze == NULL){
+        perror("Nie mozna otworzyc pliku");
+        exit(101);
+    }
 
     // Sprawdzamy pozycje w bajtach P oraz K
     char c;
@@ -67,14 +70,14 @@ int main(int argc, char *argv[]) {
         perror("Nie mozna utworzyc pliku");
         exit(101);
     }
-    
 
-
-    // Ustawienie wskaznika w pliku na poczatek oraz wywylanie bfs
+    // Ustawienie wskaznika w pliku na poczatek
     if(fseek(maze, 0, SEEK_SET) != 0){
         perror("Nie mozna otworzyc pliku");
         exit(101);
     }
+
+
 
     // Wywolanie algorytmu bfs
     printf("Szerokosc: %d, Wysokosc: %d, wspolrzedna X punktu start: %d, wspolrzedna Y punktu start: %d, wspolrzedna X punktu koniec: %d, wspolrzedna Y punktu koniec: %d\n", width, height, pLocationX, pLocationY, kLocationX, kLocationY);

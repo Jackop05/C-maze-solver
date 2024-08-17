@@ -66,6 +66,8 @@ int printMoveToConsole(FILE *pathX, FILE *pathY, int pathLength) {
         lastDirection = 'N';
     }
 
+
+
     // Petla przechodzaca po sciezce
     for(int i = 3; i < pathLength-1; i++) { 
         
@@ -104,6 +106,8 @@ int printMoveToConsole(FILE *pathX, FILE *pathY, int pathLength) {
         lastY = newY;
     }  
     correctPath += numberOfSameDirections/2;
+
+    
 
     fclose(fileX);
     fclose(fileY);

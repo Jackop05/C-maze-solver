@@ -118,9 +118,6 @@ int bfs(int width, int height, int startX, int startY, int endX, int endY, FILE 
     // Rozpoczynamy pętlę bfs
     while(front < rear){
 
-        // Dodajemy jednego kroku przy kazdej iteracji
-        //steps++;
-
         // Wczytujemy nowy punkt
         currentX = readValueAtIndex(queueX, front);
         currentY = readValueAtIndex(queueY, front);
@@ -160,6 +157,8 @@ int bfs(int width, int height, int startX, int startY, int endX, int endY, FILE 
                     perror("Nie mozna pobrac nowej wartosci z pliku");
                     exit(105);
                 }
+
+                
 
                 // Sprawdzamy czy nowy kierunek jest mozliwy do odwiedzenia
                 if((newElement != 'X' && newElement != '*' && newElement != '\n') && (newElement == ' ' || newElement == 'K' || newElement == 'P')){
