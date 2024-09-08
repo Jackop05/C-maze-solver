@@ -22,19 +22,19 @@ The program reads a maze from a file, finds the positions of the start ('P') and
    gcc -o mazeSolver main.c printMovesToConsole.c mazeSolver.c
 
 ## Usage
-1. 
+1. Compile the files and run the program:
    ```bash
-   ./mazeSolver <maze_file>
-
-## Example Maze File
-1.
-  ```bash
+   gcc -o mazeSolver main.c printMovesToConsole.c mazeSolver.c
+   ./mazeSolver <maze_name>
+2. Example of a maze:
+   ```bash
   ######
   #P   #
   # ## #
   #  #K#
   ######
-P is the beggining of the maze and K is the ending.  
+   P is the beggining of the maze and K is the ending.    
+   
 
 ## 🙋‍♂️ Authors
 - **Jakub Sztobryn** ~ Warsaw University of Technology student
