@@ -21,4 +21,4 @@ The program reads a maze from a file, finds the positions of the start ('P') and
 To compile the program, run the following command in your terminal:
 
 ```bash
-gcc -o mazeSolver main.c printMove.c solveMaze.c
+gcc -o mazeSolver main.c printMovesToConsole.c mazeSolver.c
