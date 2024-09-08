@@ -28,12 +28,12 @@ The program reads a maze from a file, finds the positions of the start ('P') and
    ./mazeSolver <maze_name>
 2. Example of a maze:
    ```bash
-  ######
-  #P   #
-  # ## #
-  #  #K#
-  ######
-   P is the beggining of the maze and K is the ending.    
+   ######
+   #P   #
+   # ## #
+   #  #K#
+   ######
+P is the beggining of the maze and K is the ending.    
    
 
 ## 🙋‍♂️ Authors
