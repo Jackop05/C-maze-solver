@@ -17,34 +17,24 @@ The program reads a maze from a file, finds the positions of the start ('P') and
 - **`printMovesToConsole.c`**: File containing functions for printing the moves to the console.
 
 ## Compilation
-
-To compile the program, run the following command in your terminal:
-
-  ```bash
-  gcc -o mazeSolver main.c printMovesToConsole.c mazeSolver.c
+1. 
+   ```bash
+   gcc -o mazeSolver main.c printMovesToConsole.c mazeSolver.c
 
 ## Usage
-After compiling the program, you can run it with the following command:
-  ```bash
-  ./mazeSolver <maze_file>
+1. 
+   ```bash
+   ./mazeSolver <maze_file>
 
 ## Example Maze File
+1.
   ```bash
   ######
   #P   #
   # ## #
   #  #K#
   ######
-P is the beggining of the maze and K is the ending.
-
-## Example Output
-  ```bash
-  Width: 6, Height: 5, Start (X, Y): 1, 1, End (X, Y): 4, 3
-  Move up
-  Move right
-  Move down
-  Move down
-  Number of steps: 4
+P is the beggining of the maze and K is the ending.  
 
 ## 🙋‍♂️ Authors
 - **Jakub Sztobryn** ~ Warsaw University of Technology student
