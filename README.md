@@ -39,7 +39,7 @@ P is the beggining of the maze and K is the ending.
 ## 🙋‍♂️ Authors
 - **Jakub Sztobryn** ~ Warsaw University of Technology student
 
-- <style>
+  <style>
 pre {
     background-color: #2d2d2d;
     color: #cccccc;
