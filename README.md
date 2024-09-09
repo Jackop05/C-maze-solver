@@ -21,18 +21,14 @@ The program reads a maze from a file, finds the positions of the start ('P') and
 - **`mazeSolver.c`**: File that uses maze solving algorithm BFS.
 - **`printMovesToConsole.c`**: File containing functions for printing the moves to the console.
 
-## 💻 Compilation
-1. Compile the program:
-   ```bash
-   gcc -o mazeSolver main.c printMovesToConsole.c mazeSolver.c
-
 ## 🔨 Usage
 1. Compile the files:
    ```bash
    gcc -o mazeSolver main.c printMovesToConsole.c mazeSolver.c
 2. Run the program:
+   ```bash
    ./mazeSolver <maze_name>
-3. Example of a maze:
+4. Example of a maze:
    ```bash
    ######
    P    #
