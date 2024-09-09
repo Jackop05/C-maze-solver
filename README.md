@@ -17,14 +17,13 @@ The program reads a maze from a file, finds the positions of the start ('P') and
 - **`printMovesToConsole.c`**: File containing functions for printing the moves to the console.
 
 ## 💻 Compilation
-1. 
+1. Compile the program:
    ```bash
    gcc -o mazeSolver main.c printMovesToConsole.c mazeSolver.c
 
 ## 🔨 Usage
-1. Compile the files and run the program:
+1. Compile the files first and then run the program:
    ```bash
-   gcc -o mazeSolver main.c printMovesToConsole.c mazeSolver.c
    ./mazeSolver <maze_name>
 2. Example of a maze:
    ```bash
