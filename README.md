@@ -3,7 +3,7 @@
 ## 📝 Overview
 This C program is a **high-performance maze solver** designed to solve mazes quickly and with minimal RAM usage. It utilizes an efficient Breadth-First Search (BFS) algorithm to find the shortest path from the start position (denoted as 'P') to the end position (denoted as 'K') in a maze file.
 
-The program reads a maze from a file, finds the positions of the start ('P') and end ('K') points, and computes the shortest path between them. The steps taken to solve the maze are printed to the console, along with the total number of steps.
+The program reads a maze from a file, finds the positions of the start ('P') and end ('K') points, and computes the shortest path between them. The number of minimal steps to solve the maze is printed ot console. Maze file is transformed, where **`X`** signs means that this tile was visited and **`@`** means it is the shortest path from the start to the end.
 
 ![image](https://github.com/user-attachments/assets/8dd1bae0-24b4-4462-a47c-f821cc26aec2)
 ![image](https://github.com/user-attachments/assets/95b5812d-1a11-4068-8fe2-b99795753771)
