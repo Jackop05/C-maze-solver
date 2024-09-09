@@ -29,25 +29,12 @@ The program reads a maze from a file, finds the positions of the start ('P') and
 2. Example of a maze:
    ```bash
    ######
-   #P   #
+   P    #
    # ## #
-   #  #K#
-   ######
+   #  # #
+   ####K#
 P is the beggining of the maze and K is the ending.    
    
 
 ## 🙋‍♂️ Authors
 - **Jakub Sztobryn** ~ Warsaw University of Technology student
-
-  <style>
-pre {
-    background-color: #2d2d2d;
-    color: #cccccc;
-    padding: 10px;
-    border-radius: 5px;
-}
-</style>
-<pre><code class="bash">
-#!/bin/bash
-echo "Hello, world!"
-</code></pre>
