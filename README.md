@@ -5,6 +5,10 @@ This C program is a **high-performance maze solver** designed to solve mazes qui
 
 The program reads a maze from a file, finds the positions of the start ('P') and end ('K') points, and computes the shortest path between them. The steps taken to solve the maze are printed to the console, along with the total number of steps.
 
+![image](https://github.com/user-attachments/assets/8dd1bae0-24b4-4462-a47c-f821cc26aec2)
+![image](https://github.com/user-attachments/assets/95b5812d-1a11-4068-8fe2-b99795753771)
+
+
 ## 💡 Features
 - **Fast execution**: The BFS algorithm is optimized for quick performance.
 - **Minimal memory usage**: The program uses temporary files to store the path, reducing memory footprint.
@@ -22,11 +26,12 @@ The program reads a maze from a file, finds the positions of the start ('P') and
    gcc -o mazeSolver main.c printMovesToConsole.c mazeSolver.c
 
 ## 🔨 Usage
-1. Compile the files first and then run the program:
+1. Compile the files:
    ```bash
    gcc -o mazeSolver main.c printMovesToConsole.c mazeSolver.c
+2. Run the program:
    ./mazeSolver <maze_name>
-2. Example of a maze:
+3. Example of a maze:
    ```bash
    ######
    P    #
